@@ -193,6 +193,9 @@ img {
   .mobile-nav-link:focus {
     color: var(--hover-color);
   }
+  .active {
+    color: var(--hover-color);
+  }
   .mobile-contacts {
     font-style: normal;
     margin-bottom: 48px;
