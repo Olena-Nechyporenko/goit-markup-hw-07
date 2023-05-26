@@ -168,17 +168,23 @@ img {
     border: none;
   }
   .mobile-menu-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     position: relative;
     padding-left: 40px;
     padding-top: 80px;
     padding-bottom: 40px;
+  }
+  .mobile-nav-list-wrapper {
+    margin-bottom: auto;
   }
   .mobile-nav-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    margin-bottom: 284px;
   }
   .mobile-nav-link {
     font-weight: 700;
@@ -251,9 +257,14 @@ img {
     fill: currentColor;
   }
 }
-@media screen and (max-width: 380px) {
+
+/* STYLES FOR MOBILE */
+@media screen and (max-width: 409px) {
   .mobile-menu-social-list {
     gap: 30px;
+  }
+  .mobile-contacts-phone {
+    font-size: 25px;
   }
 }
 
@@ -475,6 +486,8 @@ img {
     max-width: 768px;
   }
   .hero-heading {
+    font-size: 56px;
+    line-height: 1.07;
     max-width: 496px;
     margin-bottom: 36px;
   }
@@ -832,6 +845,7 @@ img {
   line-height: 1.17;
   display: inline-block;
   letter-spacing: 0.03em;
+  text-align: left;
   text-transform: uppercase;
   color: var(--accent-color);
 }
@@ -981,6 +995,9 @@ img {
     row-gap: 72px;
     margin-left: 93px;
   }
+  .logo-text-footer {
+    align-items: flex-start;
+  }
   .footer-form {
     display: flex;
     gap: 24px;
@@ -1004,7 +1021,9 @@ img {
   }
   .logo-text-footer {
     margin-right: 120px;
+    align-items: flex-start;
   }
+
   .social-footer {
     margin-right: 80px;
   }
@@ -1241,6 +1260,12 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+/* Styles for mobile */
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .modal {
+    width: 300px;
+  }
+}
 
 /* STYLES FOR TABLETS */
 @media screen and (min-width: 768px) {
@@ -1407,6 +1432,13 @@ img {
 .modal-form-submit:hover,
 .modal-form-submit:focus {
   background-color: var(--hover-color);
+}
+
+/* Styles for mobile */
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .modal-form-label-check {
+    flex-direction: column;
+  }
 }
 
 /* STYLES FOR TABLETS */
