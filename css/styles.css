@@ -496,6 +496,7 @@ img {
 /* STYLES FOR DESKTOP */
 @media screen and (min-width: 1158px) {
   .hero-section {
+    padding: 188px 0;
     max-width: 1440px;
   }
 }
@@ -1437,7 +1438,7 @@ img {
 /* Styles for mobile */
 @media screen and (min-width: 320px) and (max-width: 427px) {
   .modal-form-label-check {
-    flex-direction: column;
+    font-size: 9px;
   }
 }
 
