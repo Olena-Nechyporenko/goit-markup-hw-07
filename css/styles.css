@@ -261,7 +261,8 @@ img {
 /* STYLES FOR MOBILE */
 @media screen and (max-width: 409px) {
   .mobile-menu-social-list {
-    gap: 30px;
+    justify-content: space-between;
+    gap: 0;
   }
   .mobile-contacts-phone {
     font-size: 25px;
@@ -1261,10 +1262,10 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
-/* Styles for mobile */
+/* Styles for mobile 320-427 px*/
 @media screen and (min-width: 320px) and (max-width: 427px) {
   .modal {
-    width: 300px;
+    width: 95%;
   }
 }
 
@@ -1433,13 +1434,6 @@ img {
 .modal-form-submit:hover,
 .modal-form-submit:focus {
   background-color: var(--hover-color);
-}
-
-/* Styles for mobile */
-@media screen and (min-width: 320px) and (max-width: 427px) {
-  .modal-form-label-check {
-    font-size: 9px;
-  }
 }
 
 /* STYLES FOR TABLETS */
